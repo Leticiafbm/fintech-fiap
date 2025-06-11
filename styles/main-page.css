@@ -3,12 +3,14 @@
 
   --color-dark-cyan: #05130F;
   --color-cyan: #46CF96;
+  --color-light-cyan: #c5f0dd;
   --color-low-opacity: #05130f0f;
   --color-cyan-low-opacity: #46cf9627;
   --color-grey: #05130f7d;
   --color-white: #FAFEFC;
   --color-blue: #8ABAE1;
 
+  --font-size-ssm: 0.6rem;
   --font-size-sm: 0.8rem;
   --font-size-s: 0.9rem;
   --font-size-m: 1.1rem;
@@ -186,7 +188,7 @@
   gap: 60px;
   padding-bottom: 120px;
   background: #FAFEFC;
-  background: linear-gradient(180deg, rgba(250, 254, 252, 1) 0%, rgba(250, 254, 252, 1) 50%, rgba(70, 207, 150, 0.34) 100%);
+  background: linear-gradient(180deg, rgba(250, 254, 252, 1) 0%, rgba(70, 207, 150, 0.34) 100%);
 }
 
 .review-title{
@@ -201,7 +203,7 @@
   gap: 16px;
   justify-self: center;
   width: 80%;
-  background-color: #FAFEFC;
+  background-color: #fff;
   border-radius: 12px;
   padding: 26px;
 }
@@ -273,6 +275,95 @@
 }
 /* final dos estilos da review */
 /* final dos estilos da main */
+
+/* começo dos estilos do footer */
+.footer{
+  background-color: var(--color-light-cyan);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.socials-section{
+  padding: 0 36px;
+}
+
+.footer-azura-title{
+  color: var(--color-dark-cyan);
+  font-weight: 400;
+  font-size: var(--font-size-xl);
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+ul{
+  list-style: none;
+}
+
+.socials-links{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-dark-cyan);
+  padding: 24px;
+}
+
+.social-link{
+  display: flex;
+}
+
+.social{
+  width: 24px;
+}
+
+.about-us-section,
+.need-help-section{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-self: start;
+  padding: 26px;
+}
+
+.about-us-title,
+.need-help-title{
+  color: var(--color-dark-cyan);
+  font-size: var(--font-size-m);
+}
+
+.about-us-links,
+.need-help-links{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-us-link,
+.need-help-link{
+  text-decoration: none;
+  color: var(--color-dark-cyan);
+  font-weight: 300;
+  font-size: var(--font-size-sm);
+}
+
+.about-us-link:hover,
+.need-help-link:hover{
+  text-decoration: underline;
+}
+
+.copyright-section{
+  background-color: var(--color-cyan);
+  padding: 32px;
+  text-align: center;
+}
+
+.copyright-text{
+  font-size: var(--font-size-ssm);
+}
 
 @media (min-height: 800px) {
   .hero-section {
