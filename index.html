@@ -12,7 +12,7 @@
 
 <body>
   <header class="header">
-    <h1 class="azura-title">AZURA</h1>
+    <a href="" class="azura-title"><h1 class="azura-title">AZURA</h1></a>
 
     <article class="desktop-nav-bar" id="mobileNavBar">
       <div class="nav-bar-header">
@@ -27,19 +27,19 @@
         <li><a href="" class="nav-bar-link">Sobre</a></li>
         <li><a href="" class="nav-bar-link">Para Empresas</a></li>
         <li><a href="" class="nav-bar-link">Ajuda / faq</a></li>
-        <li><a href="" class="nav-bar-link">Login</a></li>
+        <li><a href="/pages/login.html" class="nav-bar-link">Login</a></li>
       </ul>
       
-      <button class="cto-nav-bar-button">Abrir minha conta</button>
+      <button class="cto-nav-bar-button"><a class="cto-link" href="/pages/open-account.html">Abrir minha conta</a></button>
     </article>
     <img src="/assets/icon menu.svg" alt="ícone de menu" class="icon-menu" id="openMenuButton">
   </header>
 
   <main class="main">
     <section class="hero-section">
+      <h2 class="hero-title">Seu <span class="gradient">banco</span> fácil, seguro e consciente.</h2>
+      
       <div class="hero-content-container">
-        <h2 class="hero-title">Seu <span class="gradient">banco</span> fácil, seguro e consciente.</h2>
-
         <div class="cards-container">
           <img src="/assets/hero-image.svg" alt="componente hero" class="hero-image-1">
 
@@ -54,16 +54,16 @@
       </div>
 
       <button class="cto-button">
-        <p class="cto-button-label">Abrir minha conta</p>
+        <a href="/pages/open-account.html" class="cto-link">Abrir minha conta</a>
         <img class="icon-arrow" src="/assets/arrow-icon.svg" alt="ícone de seta">
       </button>
     </section>
 
     <section class="protection-section">
-      <h2 class="protection-title">Sua Proteção Garantida</h2>
+      <h2 class="protection-title">Sua proteção garantida</h2>
 
       <article class="protection-cards-container">
-        <div class="protection-card">
+        <div class="protection-card protection-card-1">
           <img src="/assets/card-icon.svg" alt="ícone do card" class="protection-card-icon">
 
           <div class="protection-card-content-container">
@@ -73,7 +73,7 @@
           </div>
         </div>
 
-        <div class="protection-card">
+        <div class="protection-card protection-card-2">
           <img src="/assets/card-icon.svg" alt="ícone do card" class="protection-card-icon">
 
           <div class="protection-card-content-container">
@@ -83,7 +83,7 @@
           </div>
         </div>
 
-        <div class="protection-card">
+        <div class="protection-card protection-card-3">
           <img src="/assets/card-icon.svg" alt="ícone do card" class="protection-card-icon">
 
           <div class="protection-card-content-container">
@@ -178,7 +178,10 @@
       <div class="open-account-section">
         <input type="text" class="email-input" placeholder="Digite seu e-mail...">
 
-        <input type="button" class="sign-up-button" value="Cadastre-se">
+        <a href="/pages/open-account.html">
+          <input type="button" class="sign-up-button" value="Cadastre-se">
+        </a>
+        
       </div>
     </section>
   </main>

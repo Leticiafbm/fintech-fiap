@@ -1,0 +1,118 @@
+:root {
+  --font-unbounded: "Unbounded", sans-serif;
+
+  --color-dark-cyan: #05130F;
+  --color-cyan: #46CF96;
+  --color-light-cyan: #c5f0dd;
+  --color-low-opacity: #05130f0f;
+  --color-cyan-low-opacity: #46cf9627;
+  --color-grey: #05130f7d;
+  --color-lightergrey: #EEEEEE;
+  --color-mediumgrey: #c2c2c2;
+  --color-lightgrey: #737373;
+  --color-white: #FAFEFC;
+  --color-blue: #8ABAE1;
+
+  --font-size-ssm: 0.6rem;
+  --font-size-sm: 0.8rem;
+  --font-size-s: 0.9rem;
+  --font-size-m: 1.1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 2.3rem;
+  --font-size-3xl: 4rem;
+}
+
+.cto-form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 32px;
+  padding-bottom: 128px;
+}
+
+.cto-title{
+  font-weight: 400;
+  width: 270px;
+  font-size: var(--font-size-2xl);
+  background: linear-gradient(45deg, #46CF96, #8ABAE1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cto-form{
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-label{
+  color: var(--color-lightgrey);
+  font-size: var(--font-size-s);
+}
+
+.input{
+  border: none;
+  background-color: var(--color-lightergrey);
+  font-weight: 300;
+  padding: 18px;
+  border-radius: 8px;
+  color: var(--color-dark-cyan);
+  outline: none;
+}
+
+.input::placeholder{
+  color: var(--color-mediumgrey);
+  font-weight: 200;
+}
+
+.input-container-checkbox{
+  display: flex;
+  gap: 8px;
+}
+
+input[type="checkbox"]{
+  align-self: baseline;
+  height: 25px;
+  width: 25px;
+}
+
+.terms{
+  color: var(--color-dark-cyan);
+  font-weight: 300;
+  font-size: var(--font-size-s);
+}
+
+.underline{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.create-account-button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.continue-button{
+  border: none;
+  background-color: var(--color-cyan);
+  color: var(--color-white);
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--font-size-lg);
+}
+
+.has-account-link{
+  font-size: var(--font-size-s);
+  color: var(--color-dark-cyan);
+}
